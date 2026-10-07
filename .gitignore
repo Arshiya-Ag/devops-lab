@@ -1,0 +1,9 @@
+<<'EOF'
+.env
+*.key
+*.pem
+*.crt
+*.log
+__pycache__/
+*.pyc
+EOF
