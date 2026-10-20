@@ -12,6 +12,10 @@ This repository contains configuration files, hands-on projects, and troubleshoo
 
 Configuration files and documentation are available in the `bind/` directory.
 
+### Troubleshooting
+
+- [BIND SERVFAIL — IPv6 Connectivity Issue](bind/UDnsOps/incident-servfail.md)
+
 ## Planned Technologies
 
 - **Web Servers:** Apache, Nginx
