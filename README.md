@@ -1,16 +1,18 @@
 # DevOps Lab
 
-A personal repository for my Linux System Administration and DevOps journey.
+A personal repository documenting my journey in Linux System Administration and DevOps.
 
-This repository contains configuration files, hands-on projects, and troubleshooting notes from my Ubuntu and Rocky Linux labs.
+This repository contains configuration files, infrastructure projects, and troubleshooting notes from hands-on work with Ubuntu and Rocky Linux.
 
 ## Currently Implemented
 
 ### DNS — BIND9
-- **UDnsOps:** Ubuntu caching DNS server
-- **RDnsOps:** Rocky Linux caching DNS server
 
-Configuration files and documentation are available in the `bind/` directory.
+- **[UDnsOps](bind/UDnsOps/):** Ubuntu-based caching DNS server.
+- **[RDnsOps](bind/RDnsOps/):** Rocky Linux-based caching DNS server.
+- **[Nova Systems](bind/nova-lab/):** A simulated enterprise DNS infrastructure built with Rocky Linux and BIND, featuring primary and secondary authoritative servers, forward and reverse DNS, zone transfers, DNS redundancy, and subdomain delegation.
+
+Configuration files and documentation are organized in the `bind/` directory.
 
 ### Troubleshooting
 
@@ -26,6 +28,6 @@ Configuration files and documentation are available in the `bind/` directory.
 
 ## Goal
 
-Build practical Linux and DevOps skills through real-world projects, configuration management, and troubleshooting.
+Develop practical Linux administration and DevOps skills by building, maintaining, and troubleshooting realistic infrastructure environments.
 
-*This repository will grow as I learn and implement new technologies.*
+The repository will continue to evolve as new technologies, configurations, and projects are implemented.
