@@ -2,74 +2,91 @@
 
 ## Overview
 
-Nova Systems is a fictional company created to simulate the deployment and administration of DNS infrastructure in a business environment.
+Nova Systems is a fictional company created to simulate the design, deployment, and management of DNS infrastructure in a business environment.
 
-The goal of this project is to build and maintain a reliable internal DNS infrastructure using **BIND on Rocky Linux**, following real-world Linux system administration practices.
+This project focuses on building a reliable internal DNS infrastructure using **BIND9 on Rocky Linux**, providing authoritative name resolution, forward and reverse DNS, and service redundancy.
 
-The environment is designed to provide authoritative name resolution, support forward and reverse DNS lookups, and maintain service availability through multiple DNS servers.
-
-Beyond the initial deployment, the project focuses on managing DNS changes, maintaining synchronization between servers, troubleshooting configuration issues, and understanding how DNS services behave during failures.
+The environment is also designed to explore DNS zone management, replication, delegation, and troubleshooting as the company's infrastructure expands.
 
 ## Infrastructure
 
-The environment consists of two authoritative DNS servers and a client machine, operating within an isolated network.
+The environment consists of two authoritative DNS servers and a client machine connected through an isolated virtual network.
 
 | Hostname | Role | IP Address |
 |---|---|---|
 | NS1 | Primary DNS Server | `10.88.20.10` |
-| NS2 | Secondary DNS Server | `10.88.20.11` |
+| NS2 | Secondary DNS / Development DNS Server | `10.88.20.11` |
 | CLIENT | DNS Testing Client | `10.88.20.100` |
 
-**Operating System:** Rocky Linux  
-**DNS Software:** BIND  
-**Network:** `10.88.20.0/24`
+- **Operating System:** Rocky Linux
+- **DNS Software:** BIND9
+- **Network:** `10.88.20.0/24`
 
 ## DNS Architecture
 
-The infrastructure manages two DNS zones:
+### Corporate DNS
 
-- **Forward Zone:** `nova.test` — Resolves hostnames to IP addresses.
-- **Reverse Zone:** `20.88.10.in-addr.arpa` — Resolves IP addresses to hostnames.
+The main corporate DNS infrastructure manages two zones:
 
-NS1 acts as the primary source of DNS records. NS2 maintains synchronized copies of both zones through zone transfers and DNS NOTIFY.
+- **Forward Zone:** `nova.test`
+- **Reverse Zone:** `20.88.10.in-addr.arpa`
 
-This design allows NS2 to continue responding to authoritative DNS queries during temporary outages of the primary server.
+NS1 maintains the primary copies of both zones, while NS2 receives updates through zone transfers and DNS NOTIFY.
 
-To limit unnecessary access, recursive DNS queries are disabled, and zone transfers from NS1 are restricted to NS2.
+This arrangement provides authoritative DNS redundancy and allows NS2 to continue serving records during temporary outages of NS1.
 
-## Project Objectives
+### Development DNS
 
-This project aims to develop practical experience in:
+The Development Department operates under a separate DNS zone:
 
-- Deploying and configuring authoritative DNS servers on Linux.
-- Managing forward and reverse DNS zones.
-- Working with DNS resource records, including A, PTR, CNAME, MX, NS, and TXT.
-- Configuring primary-secondary DNS replication and automatic zone synchronization.
-- Implementing access restrictions for zone transfers.
-- Testing DNS redundancy and service availability during server outages.
-- Managing DNS record changes without disrupting existing services.
-- Troubleshooting DNS resolution, zone transfers, and synchronization issues.
-- Documenting infrastructure configurations and tracking changes using Git.
+- **Child Zone:** `dev.nova.test`
+- **Primary Authoritative Server:** NS2 (`10.88.20.11`)
+
+The parent `nova.test` zone delegates authority for `dev.nova.test` to NS2 using an NS record and a corresponding glue record.
+
+The child zone has its own SOA record and is managed independently of the corporate zone.
+
+NS2 therefore serves two roles: secondary for the corporate DNS zones and primary for the Development DNS zone.
+
+## DNS Records
+
+The infrastructure includes DNS records for internal services, applications, and development resources.
+
+| Hostname | Record | Value |
+|---|---|---|
+| `app.nova.test` | A | `10.88.20.31` |
+| `dashboard.nova.test` | CNAME | `app.nova.test` |
+| `mail.nova.test` | A | `10.88.20.40` |
+| `git.dev.nova.test` | A | `10.88.20.70` |
+| `ci.dev.nova.test` | A | `10.88.20.71` |
+| `docs.dev.nova.test` | CNAME | `git.dev.nova.test` |
+
+Reverse DNS records are maintained separately for the internal network.
+
+## Configuration and Management
+
+The DNS infrastructure has been configured and tested for:
+
+- Authoritative forward and reverse DNS resolution.
+- Primary-secondary zone replication using AXFR and DNS NOTIFY.
+- Restricted zone transfers and disabled recursive queries.
+- DNS availability during temporary primary-server outages.
+- Application IP migration with corresponding DNS record updates.
+- Parent-child zone delegation using NS and glue records.
+- Independent management of corporate and development DNS zones.
+- SOA serial synchronization and DNS troubleshooting.
+
+Configuration files are version-controlled using Git to track infrastructure changes and maintain historical versions.
 
 ## Repository Structure
 
-```text
-nova-lab/
-├── README.md
-├── ns1.nova.test/
-│   ├── README.md
-│   └── Configuration files
-└── ns2.nova.test/
-    ├── README.md
-    └── Configuration files
-```
-
-Each server directory contains its relevant BIND configuration and documentation.
+- **`ns1/`** — Primary DNS server configuration and documentation.
+- **`ns2/`** — Secondary DNS server and Development DNS configuration.
 
 ## Project Scope
 
-The infrastructure runs in an isolated virtual lab and is intended for learning, experimentation, and improving practical Linux administration skills.
+This infrastructure operates in an isolated virtual lab and is intended for practical Linux system administration and infrastructure management.
 
-The project will continue to evolve through DNS configuration changes, troubleshooting exercises, and infrastructure improvements, with the aim of building a deeper understanding of how DNS services are managed in real-world environments.
+The project will continue to evolve as additional DNS services, operational improvements, and troubleshooting exercises are introduced.
 
-**Note:** This is a simulated internal infrastructure, not a production deployment.
+**Note:** This is a simulated internal environment, not a production deployment.

@@ -1,15 +1,21 @@
-# NS2 — Secondary DNS Server
+# NS2 — Secondary & Development DNS Server
 
-NS2 is the secondary authoritative DNS server for the Nova Systems internal network, running BIND on Rocky Linux.
+NS2 is an authoritative DNS server for the Nova Systems internal network, running BIND9 on Rocky Linux.
 
-It maintains synchronized copies of the forward and reverse DNS zones hosted on NS1 through zone transfers. NS2 provides DNS redundancy by continuing to serve authoritative queries when the primary nameserver is unavailable.
+It operates as the secondary DNS server for the corporate forward and reverse zones, maintaining synchronized copies of the records hosted on NS1 through zone transfers.
+
+In addition to providing DNS redundancy, NS2 acts as the primary authoritative server for `dev.nova.test`, a delegated subdomain used to manage the company's development resources.
+
+The Development zone is maintained independently, with its own SOA record, nameserver configuration, and DNS records for internal development services.
 
 ## Configuration
 
 - **IP Address:** `10.88.20.11`
-- **Forward Zone:** `nova.test`
-- **Reverse Zone:** `20.88.10.in-addr.arpa`
-- **Primary DNS:** `10.88.20.10` (NS1)
-- **Zone Transfers:** Received from NS1
+- **Secondary Forward Zone:** `nova.test`
+- **Secondary Reverse Zone:** `20.88.10.in-addr.arpa`
+- **Primary Zone:** `dev.nova.test`
+- **Parent Primary DNS:** `10.88.20.10` (NS1)
+- **Zone Transfers:** Received from NS1 for corporate zones
 - **DNS NOTIFY:** Received from NS1
+- **Development Records:** Git, CI, and documentation services
 - **Recursion:** Disabled

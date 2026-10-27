@@ -1,0 +1,12 @@
+$TTL 300
+@	IN SOA	ns2.dev.nova.test. hostmaster.dev.nova.test. (
+					1	; serial
+					300	; refresh
+					300	; retry
+					3600	; expire
+					120 )	; minimum
+	NS	ns2.dev.nova.test.
+ns2	A	10.88.20.11
+git	A	10.88.20.70
+docs	CNAME	git.dev.nova.test.
+ci	A	10.88.20.71

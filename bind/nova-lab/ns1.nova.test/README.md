@@ -1,8 +1,12 @@
 # NS1 — Primary DNS Server
 
-NS1 is the primary authoritative DNS server for the Nova Systems internal network, running BIND on Rocky Linux.
+NS1 is the primary authoritative DNS server for the Nova Systems internal network, running BIND9 on Rocky Linux.
 
-It manages forward and reverse DNS resolution for the internal network. DNS records are maintained on NS1 and synchronized with the secondary nameserver (NS2) to provide redundancy and maintain DNS availability during primary-server outages.
+It manages the corporate forward and reverse DNS zones, providing hostname resolution and reverse lookups for internal services.
+
+DNS changes are maintained on NS1 and synchronized with NS2 through restricted zone transfers and DNS NOTIFY.
+
+The server also manages DNS delegation for the `dev.nova.test` subdomain, directing queries for development resources to NS2 using NS and glue records.
 
 ## Configuration
 
@@ -10,6 +14,7 @@ It manages forward and reverse DNS resolution for the internal network. DNS reco
 - **Forward Zone:** `nova.test`
 - **Reverse Zone:** `20.88.10.in-addr.arpa`
 - **Secondary DNS:** `10.88.20.11` (NS2)
+- **Delegated Zone:** `dev.nova.test`
 - **Zone Transfers:** Restricted to NS2
 - **DNS NOTIFY:** Enabled
 - **Recursion:** Disabled
