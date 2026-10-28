@@ -6,7 +6,9 @@ It manages the corporate forward and reverse DNS zones, providing hostname resol
 
 DNS changes are maintained on NS1 and synchronized with NS2 through restricted zone transfers and DNS NOTIFY.
 
-The server also manages DNS delegation for the `dev.nova.test` subdomain, directing queries for development resources to NS2 using NS and glue records.
+The server also manages delegation for the `dev.nova.test` subdomain, directing DNS resolvers to NS2 using NS and glue records.
+
+NS1 operates as an authoritative-only DNS server, with recursive queries handled separately by the internal caching resolver.
 
 ## Configuration
 
@@ -18,3 +20,10 @@ The server also manages DNS delegation for the `dev.nova.test` subdomain, direct
 - **Zone Transfers:** Restricted to NS2
 - **DNS NOTIFY:** Enabled
 - **Recursion:** Disabled
+- **Internal Recursive Resolver:** `10.88.20.100`
+
+## Maintenance
+
+DNS zone changes are applied on NS1 and synchronized with NS2 using SOA serial updates.
+
+Nameserver records for the corporate zone are explicitly associated with the zone apex to prevent unintended DNS delegation.

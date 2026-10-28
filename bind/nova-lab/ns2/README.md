@@ -8,6 +8,8 @@ In addition to providing DNS redundancy, NS2 acts as the primary authoritative s
 
 The Development zone is maintained independently, with its own SOA record, nameserver configuration, and DNS records for internal development services.
 
+NS2 also responds to authoritative queries from the internal recursive resolver, allowing delegated development hostnames to be resolved automatically.
+
 ## Configuration
 
 - **IP Address:** `10.88.20.11`
@@ -18,4 +20,5 @@ The Development zone is maintained independently, with its own SOA record, names
 - **Zone Transfers:** Received from NS1 for corporate zones
 - **DNS NOTIFY:** Received from NS1
 - **Development Records:** Git, CI, and documentation services
+- **Internal Recursive Resolver:** `10.88.20.100`
 - **Recursion:** Disabled
