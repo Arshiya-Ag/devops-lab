@@ -10,13 +10,14 @@ This repository contains configuration files, infrastructure projects, and troub
 
 - **[UDnsOps](bind/UDnsOps/):** Ubuntu-based caching DNS server.
 - **[RDnsOps](bind/RDnsOps/):** Rocky Linux-based caching DNS server.
-- **[Nova Systems](bind/nova-lab/):** A simulated enterprise DNS infrastructure built with Rocky Linux and BIND, featuring primary and secondary authoritative servers, forward and reverse DNS, zone transfers, DNS redundancy, and subdomain delegation.
+- **[Nova Systems](bind/nova-lab/):** A simulated enterprise DNS infrastructure featuring authoritative DNS servers, forward and reverse DNS, zone transfers, redundancy, subdomain delegation, and recursive DNS caching.
 
 Configuration files and documentation are organized in the `bind/` directory.
 
 ### Troubleshooting
 
 - [BIND SERVFAIL — IPv6 Connectivity Issue](bind/UDnsOps/incident-servfail.md)
+- [BIND — Unexpected DNS Referral Caused by Incorrect NS Record](bind/nova-lab/incidents/ns1-unexpected-referral/README.md)
 
 ## Planned Technologies
 
