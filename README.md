@@ -14,6 +14,11 @@ This repository contains configuration files, infrastructure projects, and troub
 
 Configuration files and documentation are organized in the `bind/` directory.
 
+### APACHE — HTTPD
+
+- **[NOVA](apache/nova/):** Nova systems Apache Infastructure 
+
+
 ### Troubleshooting
 
 - [BIND SERVFAIL — IPv6 Connectivity Issue](bind/UDnsOps/incident-servfail.md)
