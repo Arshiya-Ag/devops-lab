@@ -1,0 +1,14 @@
+# Nova Systems - Network Infrastructure Inventory Template
+# Version: 1.1 | Date: 2026-Q4 | Division: IT Infrastructure & Operations
+# Internal Reference: LAB-NET-INV-TEMPLATE
+AssetID,Hostname,IPv4Address,SubnetMask,Gateway,VLAN,Environment,Role,OperatingSystem,CPU_Cores,RAM_GB,Disk_GB,PrimaryContact,Status
+NS-SRV-01,gw01.infra.nova.test,10.88.20.1,255.255.255.0,None,20,Production,Gateway / Firewall,Rocky Linux 9.4,4,8,80,ops@nova.test,Active
+NS-SRV-02,dns01.infra.nova.test,10.88.20.10,255.255.255.0,10.88.20.1,20,Production,Authoritative BIND DNS,Rocky Linux 9.4,2,4,40,ops@nova.test,Active
+NS-SRV-03,web01.infra.nova.test,10.88.20.21,255.255.255.0,10.88.20.1,20,Production,Apache HTTP Web Cluster,Rocky Linux 9.4,4,16,120,webmaster@nova.test,Active
+NS-SRV-04,dl01.infra.nova.test,10.88.20.22,255.255.255.0,10.88.20.1,20,Staging,Download Center Mirror,Rocky Linux 9.4,2,8,200,dl-admin@nova.test,Maintenance
+NS-SRV-05,app01.prod.nova.test,10.88.20.30,255.255.255.0,10.88.20.1,20,Production,Custom Business Portal,Rocky Linux 9.4,8,32,250,dev@nova.test,Active
+NS-SRV-06,db01.prod.nova.test,10.88.20.40,255.255.255.0,10.88.20.1,20,Production,Relational Database Server,Rocky Linux 9.4,8,64,500,dba@nova.test,Active
+NS-SRV-07,mon01.infra.nova.test,10.88.20.50,255.255.255.0,10.88.20.1,20,Production,Monitoring & Telemetry,Rocky Linux 9.4,4,16,300,ops@nova.test,Active
+NS-SRV-08,bkp01.infra.nova.test,10.88.20.60,255.255.255.0,10.88.20.1,20,Production,Centralized Backup Repository,Rocky Linux 9.4,4,16,2000,backup-team@nova.test,Active
+NS-SRV-09,mgmt01.corp.nova.test,10.88.20.70,255.255.255.0,10.88.20.1,20,Production,Ansible Automation Node,Rocky Linux 9.4,4,8,80,ops@nova.test,Active
+NS-SRV-10,test01.dev.nova.test,10.88.20.90,255.255.255.0,10.88.20.1,20,Development,Sandbox Testing Node,Rocky Linux 9.4,2,4,50,qa@nova.test,Standby

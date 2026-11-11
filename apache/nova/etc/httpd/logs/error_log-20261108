@@ -1,0 +1,28 @@
+[Thu Nov 05 12:45:01.063722 2026] [core:notice] [pid 1210:tid 1210] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Thu Nov 05 12:45:01.072353 2026] [suexec:notice] [pid 1210:tid 1210] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Nov 05 12:45:11.112980 2026] [lbmethod_heartbeat:notice] [pid 1210:tid 1210] AH02282: No slotmem from mod_heartmonitor
+[Thu Nov 05 12:45:11.132751 2026] [mpm_event:notice] [pid 1210:tid 1210] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Thu Nov 05 12:45:11.132783 2026] [core:notice] [pid 1210:tid 1210] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Nov 05 13:33:36.914996 2026] [mpm_event:notice] [pid 1210:tid 1210] AH00492: caught SIGWINCH, shutting down gracefully
+[Thu Nov 05 13:34:03.110036 2026] [core:notice] [pid 1643:tid 1643] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Thu Nov 05 13:34:03.112647 2026] [suexec:notice] [pid 1643:tid 1643] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Nov 05 13:34:13.158155 2026] [lbmethod_heartbeat:notice] [pid 1643:tid 1643] AH02282: No slotmem from mod_heartmonitor
+[Thu Nov 05 13:34:13.173263 2026] [mpm_event:notice] [pid 1643:tid 1643] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Thu Nov 05 13:34:13.173324 2026] [core:notice] [pid 1643:tid 1643] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Nov 05 13:34:41.529370 2026] [mpm_event:notice] [pid 1643:tid 1643] AH00492: caught SIGWINCH, shutting down gracefully
+[Thu Nov 05 20:33:45.282403 2026] [core:notice] [pid 1389:tid 1389] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Thu Nov 05 20:33:45.292168 2026] [suexec:notice] [pid 1389:tid 1389] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Nov 05 20:33:45.969502 2026] [lbmethod_heartbeat:notice] [pid 1389:tid 1389] AH02282: No slotmem from mod_heartmonitor
+[Thu Nov 05 20:33:45.975554 2026] [mpm_event:notice] [pid 1389:tid 1389] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Thu Nov 05 20:33:45.975573 2026] [core:notice] [pid 1389:tid 1389] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Nov 06 11:31:03.819181 2026] [core:notice] [pid 1414:tid 1414] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Nov 06 11:31:03.829201 2026] [suexec:notice] [pid 1414:tid 1414] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Nov 06 11:31:04.503144 2026] [lbmethod_heartbeat:notice] [pid 1414:tid 1414] AH02282: No slotmem from mod_heartmonitor
+[Fri Nov 06 11:31:04.523639 2026] [mpm_event:notice] [pid 1414:tid 1414] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Fri Nov 06 11:31:04.523702 2026] [core:notice] [pid 1414:tid 1414] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Nov 06 11:33:26.926749 2026] [mpm_event:notice] [pid 1414:tid 1414] AH00492: caught SIGWINCH, shutting down gracefully
+[Fri Nov 06 11:34:01.584275 2026] [core:notice] [pid 1644:tid 1644] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Nov 06 11:34:01.588567 2026] [suexec:notice] [pid 1644:tid 1644] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Nov 06 11:34:02.022528 2026] [lbmethod_heartbeat:notice] [pid 1644:tid 1644] AH02282: No slotmem from mod_heartmonitor
+[Fri Nov 06 11:34:02.028515 2026] [mpm_event:notice] [pid 1644:tid 1644] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Fri Nov 06 11:34:02.028533 2026] [core:notice] [pid 1644:tid 1644] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nova Download Center — Explore official software utilities, technical checklists, inventory templates, and server deployment documentation from Nova Systems." />
+  <title>Nova Download Center — Everything you need. One place.</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- ── Navigation Bar ───────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+        <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+          <rect width="42" height="42" rx="9" fill="#101C34"/>
+          <!-- N Mark in Blue -->
+          <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+          <!-- Download Accent in Cyan -->
+          <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-parent">Nova Systems</span>
+          <span class="nav-logo-title">Download Center</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+
+      <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer" title="Visit Nova Systems corporate website">
+        <span>Corporate Site</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="software.html">Software</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer">
+      <span>Nova Systems Corporate Site &rarr;</span>
+    </a>
+  </nav>
+
+  <main>
+    <!-- ── Hero Section ─────────────────────────────────────── -->
+    <section class="hero page-top" aria-labelledby="hero-heading">
+      <div class="hero-bg">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow-1" aria-hidden="true"></div>
+        <div class="hero-glow-2" aria-hidden="true"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">Official Distribution Portal</div>
+            <h1 id="hero-heading">Everything you need.<br><span>One place.</span></h1>
+            <p class="hero-subtitle">
+              Explore software, utilities, and technical resources designed to support your IT infrastructure. Built and curated by the engineers at Nova Systems.
+            </p>
+            <div class="hero-actions">
+              <a href="software.html" class="btn btn-primary btn-lg">Browse Software</a>
+              <a href="resources.html" class="btn btn-secondary btn-lg">Explore Resources</a>
+            </div>
+
+            <div class="hero-stats" aria-label="Portal highlights">
+              <div class="stat-item">
+                <span class="stat-value">4<span>+</span></span>
+                <span class="stat-label">Software Tools</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">100<span>%</span></span>
+                <span class="stat-label">SHA-256 Verified</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">Offline</span>
+                <span class="stat-label">Lab Compatible</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Graphic Panel -->
+          <div class="hero-graphic" aria-hidden="true">
+            <div class="tech-panel">
+              <div class="tech-panel-header">
+                <div class="tech-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="tech-panel-title">dl.nova.test:8080/catalog</div>
+              </div>
+              <div class="tech-row">
+                <div class="tech-row-info">
+                  <div class="tech-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                  </div>
+                  <div>
+                    <div class="tech-name">Infrastructure Checklist</div>
+                    <div class="tech-meta">Markdown • v1.2 • 6.2 KB</div>
+                  </div>
+                </div>
+                <span class="badge badge-success">Available</span>
+              </div>
+              <div class="tech-row">
+                <div class="tech-row-info">
+                  <div class="tech-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line></svg>
+                  </div>
+                  <div>
+                    <div class="tech-name">Nova Monitor Agent</div>
+                    <div class="tech-meta">Telemetry • v0.9.0-preview</div>
+                  </div>
+                </div>
+                <span class="badge badge-warning">Coming Soon</span>
+              </div>
+              <div class="tech-row">
+                <div class="tech-row-info">
+                  <div class="tech-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect></svg>
+                  </div>
+                  <div>
+                    <div class="tech-name">Complete Resource Pack</div>
+                    <div class="tech-meta">ZIP Archive • 5.6 KB</div>
+                  </div>
+                </div>
+                <span class="badge badge-success">Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Live Search Section ──────────────────────────────── -->
+    <section class="section section--light" aria-labelledby="search-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Find Software &amp; Downloads</span>
+          <h2 id="search-heading">Search the Download Catalog</h2>
+          <p>Instantly search across our software concepts, administration scripts, and verified operational templates.</p>
+        </div>
+
+        <div class="search-container">
+          <div class="search-bar-wrap">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="home-search-input" 
+              class="search-input" 
+              placeholder="Search by name, category, or keyword (e.g., monitor, backup, checklist)..." 
+              aria-label="Search catalog" 
+              autocomplete="off" 
+            />
+            <button class="search-clear-btn" id="home-search-clear" aria-label="Clear search input">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="search-dropdown" id="home-search-dropdown" role="region" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Featured Software Products ───────────────────────── -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Software Portfolio</span>
+          <h2 id="featured-heading">Featured Software Products</h2>
+          <p>Nova Systems engineering concepts designed to automate server administration, monitor system metrics, and protect business data.</p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Product 1 -->
+          <article class="card">
+            <div class="card-top">
+              <div class="card-icon card-icon--blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="card-header-meta">
+                <span class="badge badge-warning">Coming Soon</span>
+                <span class="badge badge-slate">Monitoring</span>
+              </div>
+            </div>
+            <h3 class="card-title">Nova Monitor Agent</h3>
+            <p class="card-desc">Lightweight telemetry and health observer designed to help administrators track CPU pressure, memory usage, and daemon responsiveness across Linux servers.</p>
+            <div class="card-meta-list">
+              <div class="card-meta-row">
+                <span>Platform:</span>
+                <strong>Linux (Rocky, RHEL), Windows Server</strong>
+              </div>
+              <div class="card-meta-row">
+                <span>Version:</span>
+                <strong>0.9.0-preview</strong>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="software.html?search=Monitor" class="btn btn-outline btn-sm w-full">View Details in Catalog &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="card">
+            <div class="card-top">
+              <div class="card-icon card-icon--blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+              </div>
+              <div class="card-header-meta">
+                <span class="badge badge-warning">Coming Soon</span>
+                <span class="badge badge-slate">Backup</span>
+              </div>
+            </div>
+            <h3 class="card-title">Nova Backup Utility</h3>
+            <p class="card-desc">Proposed enterprise backup management tool supporting scheduled snapshots, automated differential replication, and archive verification manifests.</p>
+            <div class="card-meta-list">
+              <div class="card-meta-row">
+                <span>Platform:</span>
+                <strong>Enterprise Linux 8/9, Rocky Linux</strong>
+              </div>
+              <div class="card-meta-row">
+                <span>Version:</span>
+                <strong>1.0.0-rc1</strong>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="software.html?search=Backup" class="btn btn-outline btn-sm w-full">View Details in Catalog &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="card">
+            <div class="card-top">
+              <div class="card-icon card-icon--blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              </div>
+              <div class="card-header-meta">
+                <span class="badge badge-warning">Coming Soon</span>
+                <span class="badge badge-slate">Administration</span>
+              </div>
+            </div>
+            <h3 class="card-title">Nova Admin Toolkit</h3>
+            <p class="card-desc">A planned collection of command-line administration utilities, configuration syntax checkers, and standardized user management scripts.</p>
+            <div class="card-meta-list">
+              <div class="card-meta-row">
+                <span>Platform:</span>
+                <strong>Cross-platform CLI (Linux, macOS)</strong>
+              </div>
+              <div class="card-meta-row">
+                <span>Version:</span>
+                <strong>0.5.0-dev</strong>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="software.html?search=Admin" class="btn btn-outline btn-sm w-full">View Details in Catalog &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="card">
+            <div class="card-top">
+              <div class="card-icon card-icon--blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="6" height="6" rx="1"></rect><rect x="16" y="2" width="6" height="6" rx="1"></rect><rect x="9" y="16" width="6" height="6" rx="1"></rect><path d="M5 8v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"></path><line x1="12" y1="13" x2="12" y2="16"></line></svg>
+              </div>
+              <div class="card-header-meta">
+                <span class="badge badge-warning">Coming Soon</span>
+                <span class="badge badge-slate">Networking</span>
+              </div>
+            </div>
+            <h3 class="card-title">Nova Network Diagnostics</h3>
+            <p class="card-desc">Proposed networking troubleshooting suite for automated DNS record verification, gateway path analysis, MTU fragmentation discovery, and port checks.</p>
+            <div class="card-meta-list">
+              <div class="card-meta-row">
+                <span>Platform:</span>
+                <strong>Linux, Windows Server</strong>
+              </div>
+              <div class="card-meta-row">
+                <span>Version:</span>
+                <strong>1.1.0-alpha</strong>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="software.html?search=Network" class="btn btn-outline btn-sm w-full">View Details in Catalog &rarr;</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="software.html" class="btn btn-primary">Open Full Software Catalog &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Resource Categories ──────────────────────────────── -->
+    <section class="section section--light" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Browse by Category</span>
+          <h2 id="categories-heading">Resource Categories</h2>
+          <p>Organized access to software tools, deployment documentation, configuration templates, and technical utility packages.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="cat-card">
+            <div class="cat-card-icon card-icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Software Tools</h3>
+            <p>Monitoring agents, backup utilities, and administrative tools tailored for SMB IT environments.</p>
+            <a href="software.html" class="cat-link">Explore Software &rarr;</a>
+          </div>
+
+          <div class="cat-card">
+            <div class="cat-card-icon card-icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <h3>Documentation</h3>
+            <p>Standardized deployment checklists, architecture guides, and server provisioning runbooks.</p>
+            <a href="resources.html" class="cat-link">View Documentation &rarr;</a>
+          </div>
+
+          <div class="cat-card">
+            <div class="cat-card-icon card-icon--cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 12h10M12 7v10"></path></svg>
+            </div>
+            <h3>System Utilities</h3>
+            <p>Offline resource packages, compressed bundles, and setup utilities ready for immediate download.</p>
+            <a href="resources.html" class="cat-link">Browse Utilities &rarr;</a>
+          </div>
+
+          <div class="cat-card">
+            <div class="cat-card-icon card-icon--navy">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3>Technical Resources</h3>
+            <p>Production-tested CSV inventory matrices, IP address trackers, and auditing reference sheets.</p>
+            <a href="resources.html" class="cat-link">Access Templates &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Why Nova Systems ─────────────────────────────────── -->
+    <section class="section section--navy" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Reliable IT. Smarter Business.</span>
+          <h2 id="why-heading" class="text-white">Why Businesses Choose Nova Systems</h2>
+          <p class="text-slate">We believe technology should be dependable, maintainable, and aligned directly with practical business needs.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="why-box">
+            <h4>Practical Over Complex</h4>
+            <p>Our solutions focus on stable distribution packages, clean systemd integrations, and standard configuration files rather than fragile abstractions.</p>
+          </div>
+          <div class="why-box">
+            <h4>Security by Default</h4>
+            <p>Every resource adheres to baseline security practices: SELinux enforcement, hardened SSH access, and cryptographic checksum validation.</p>
+          </div>
+          <div class="why-box">
+            <h4>Dedicated B2B Focus</h4>
+            <p>As a 50-person technology company, Nova Systems understands the operational realities of growing small and medium-sized enterprises.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+            <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <rect width="42" height="42" rx="9" fill="#101C34"/>
+              <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+              <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <div class="nav-logo-text">
+              <span class="nav-logo-parent">Nova Systems</span>
+              <span class="nav-logo-title">Download Center</span>
+            </div>
+          </a>
+          <p>Centralized software distribution and technical resource hub for clients and system administrators.</p>
+          <div class="footer-disclaimer-box">
+            <strong>Simulation Notice</strong>
+            This portal is part of an internal Rocky Linux / Apache web infrastructure simulation. All business entities, products, and domains are fictional demonstrations.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Catalog</a></li>
+            <li><a href="resources.html">Demonstration Downloads</a></li>
+            <li><a href="about.html">About Download Center</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="software.html?category=monitoring">Monitoring Tools</a></li>
+            <li><a href="software.html?category=backup">Backup Utilities</a></li>
+            <li><a href="software.html?category=administration">System Administration</a></li>
+            <li><a href="software.html?category=networking">Network Diagnostics</a></li>
+            <li><a href="resources.html">Templates &amp; Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Nova Systems</h5>
+          <ul>
+            <li><a href="http://www.nova.test:8080" target="_blank" rel="noopener noreferrer">Corporate Website &rarr;</a></li>
+            <li><a href="about.html#company">About Nova Systems</a></li>
+            <li><a href="support.html#verification">Checksum Verification</a></li>
+            <li><a href="support.html#contact">Lab Support (support@nova.test)</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Systems. All rights reserved. Internal Lab Infrastructure.</p>
+        <div>
+          <span>Domain: dl.nova.test</span> &bull; 
+          <a href="http://www.nova.test:8080" class="text-cyan">www.nova.test</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/catalog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

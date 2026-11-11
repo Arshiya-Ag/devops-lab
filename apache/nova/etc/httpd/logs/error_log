@@ -1,0 +1,20 @@
+[Tue Nov 10 12:39:05.622106 2026] [core:notice] [pid 1596:tid 1596] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Tue Nov 10 12:39:05.630737 2026] [suexec:notice] [pid 1596:tid 1596] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 10 12:39:06.036363 2026] [lbmethod_heartbeat:notice] [pid 1596:tid 1596] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 10 12:39:06.044498 2026] [mpm_event:notice] [pid 1596:tid 1596] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Tue Nov 10 12:39:06.044522 2026] [core:notice] [pid 1596:tid 1596] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 10 13:16:32.683456 2026] [mpm_event:notice] [pid 1596:tid 1596] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Nov 10 13:16:34.383378 2026] [core:notice] [pid 1919:tid 1919] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Tue Nov 10 13:16:34.390052 2026] [suexec:notice] [pid 1919:tid 1919] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 10 13:16:35.058376 2026] [lbmethod_heartbeat:notice] [pid 1919:tid 1919] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 10 13:16:35.068091 2026] [mpm_event:notice] [pid 1919:tid 1919] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Tue Nov 10 13:16:35.068135 2026] [core:notice] [pid 1919:tid 1919] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Wed Nov 11 12:27:24.874515 2026] [core:notice] [pid 1227:tid 1227] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Wed Nov 11 12:27:24.881170 2026] [suexec:notice] [pid 1227:tid 1227] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Nov 11 12:27:25.531815 2026] [lbmethod_heartbeat:notice] [pid 1227:tid 1227] AH02282: No slotmem from mod_heartmonitor
+[Wed Nov 11 12:27:25.539655 2026] [mpm_event:notice] [pid 1227:tid 1227] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Wed Nov 11 12:27:25.539695 2026] [core:notice] [pid 1227:tid 1227] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Wed Nov 11 12:45:20.030942 2026] [mpm_event:notice] [pid 1227:tid 1227] AH00493: SIGUSR1 received.  Doing graceful restart
+[Wed Nov 11 12:45:20.552589 2026] [lbmethod_heartbeat:notice] [pid 1227:tid 1227] AH02282: No slotmem from mod_heartmonitor
+[Wed Nov 11 12:45:20.556426 2026] [mpm_event:notice] [pid 1227:tid 1227] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
+[Wed Nov 11 12:45:20.556462 2026] [core:notice] [pid 1227:tid 1227] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'

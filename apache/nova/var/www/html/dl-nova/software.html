@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Nova Systems software catalog — Enterprise monitoring agents, backup utilities, administration toolkits, and network diagnostics for SMB environments." />
+  <title>Software Catalog — Nova Download Center</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- ── Navigation Bar ───────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+        <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+          <rect width="42" height="42" rx="9" fill="#101C34"/>
+          <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+          <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-parent">Nova Systems</span>
+          <span class="nav-logo-title">Download Center</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="software.html" class="active" aria-current="page">Software</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+
+      <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer" title="Visit Nova Systems corporate website">
+        <span>Corporate Site</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="software.html" class="active">Software</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer">
+      <span>Nova Systems Corporate Site &rarr;</span>
+    </a>
+  </nav>
+
+  <main>
+    <!-- ── Page Hero ────────────────────────────────────────── -->
+    <section class="page-hero page-top" aria-labelledby="software-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol role="list">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">›</li>
+            <li aria-current="page">Software Catalog</li>
+          </ol>
+        </nav>
+        <span class="section-label">Enterprise Applications</span>
+        <h1 id="software-hero-heading">Software Catalog</h1>
+        <p class="page-hero-desc">
+          Browse upcoming tools and applications engineered by Nova Systems. Review target platforms, architecture specifications, and planned release milestones.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Catalog Interactive Section ──────────────────────── -->
+    <section class="section section--light">
+      <div class="container">
+
+        <!-- Toolbar: Search, Filters, Sorting -->
+        <div class="catalog-toolbar" role="region" aria-label="Catalog controls">
+          <div class="filter-group" role="group" aria-label="Filter software by category">
+            <button class="filter-btn active" data-filter="all">All Software</button>
+            <button class="filter-btn" data-filter="monitoring">Monitoring</button>
+            <button class="filter-btn" data-filter="backup">Backup</button>
+            <button class="filter-btn" data-filter="administration">Administration</button>
+            <button class="filter-btn" data-filter="networking">Networking</button>
+          </div>
+
+          <div class="search-bar-wrap" style="flex: 1 1 260px; max-width: 320px; box-shadow: none;">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="software-search-input" 
+              class="search-input" 
+              placeholder="Filter by keyword..." 
+              aria-label="Filter software list"
+              style="padding-block: 0.5rem; font-size: 0.875rem;" 
+            />
+            <button class="search-clear-btn" id="software-search-clear" aria-label="Clear filter input">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="sort-group">
+            <label for="software-sort-select" class="sort-label">Sort:</label>
+            <select id="software-sort-select" class="sort-select" aria-label="Sort products">
+              <option value="name-asc">Name (A &rarr; Z)</option>
+              <option value="name-desc">Name (Z &rarr; A)</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex-between mb-3" style="padding-inline: 0.25rem;">
+          <span class="text-muted" id="software-result-count">Showing 4 products</span>
+          <span class="badge badge-slate">Phase: Active Research &amp; Design</span>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid-2" id="software-grid" aria-live="polite">
+          <!-- Populated dynamically via assets/js/main.js from window.NOVA_CATALOG.software -->
+          <noscript>
+            <p style="padding: 2rem; background: #fff; border-radius: 8px;">
+              JavaScript is required to dynamically filter the software catalog. Please enable JavaScript or see our documentation resources.
+            </p>
+          </noscript>
+        </div>
+
+        <!-- Notice Banner -->
+        <div style="margin-top: 3.5rem; background: #FFFFFF; border: 1px solid var(--border); border-left: 4px solid var(--blue); border-radius: var(--radius-md); padding: 1.5rem;">
+          <h4 style="margin-bottom: 0.4rem; color: var(--navy);">Development Notice &amp; Release Policy</h4>
+          <p style="font-size: 0.9rem; color: var(--slate-dark); margin: 0;">
+            The software products listed above represent upcoming solutions engineered by Nova Systems. In accordance with enterprise engineering standards, downloadable binaries are published exclusively following complete internal QA cycles, vulnerability scanning, and package signing. To access currently available operational files, visit the <a href="resources.html" class="text-blue" style="text-decoration: underline; font-weight: 600;">Demonstration Resources</a> section.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Product Details Modal ────────────────────────────── -->
+  <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <span class="badge badge-cyan" id="modal-category">Category</span>
+        <h3 id="modal-title" style="margin-top: 0.5rem;">Product Name</h3>
+        <p class="text-slate" id="modal-desc" style="margin-top: 0.25rem;">Description</p>
+      </div>
+      <div class="modal-body">
+        <div style="background: var(--light); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border); margin-bottom: 1.25rem; font-size: 0.875rem;">
+          <div class="card-meta-row" style="margin-bottom: 0.4rem;">
+            <span>Target OS:</span>
+            <strong id="modal-platform">Platform</strong>
+          </div>
+          <div class="card-meta-row" style="margin-bottom: 0.4rem;">
+            <span>Proposed Version:</span>
+            <strong id="modal-version">Version</strong>
+          </div>
+          <div class="card-meta-row" style="margin-bottom: 0.4rem;">
+            <span>Responsible Division:</span>
+            <strong id="modal-division">Division</strong>
+          </div>
+          <div class="card-meta-row">
+            <span>Targeted Milestone:</span>
+            <strong id="modal-release" class="text-blue">Release</strong>
+          </div>
+        </div>
+
+        <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem;">Key Architecture Highlights</h4>
+        <ul class="modal-features" id="modal-features-list">
+          <!-- Populated dynamically -->
+        </ul>
+
+        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; justify-content: flex-end;">
+          <button class="btn btn-primary btn-sm" onclick="document.getElementById('product-modal').classList.remove('open'); document.body.style.overflow='';">
+            Close Specifications
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+            <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <rect width="42" height="42" rx="9" fill="#101C34"/>
+              <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+              <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <div class="nav-logo-text">
+              <span class="nav-logo-parent">Nova Systems</span>
+              <span class="nav-logo-title">Download Center</span>
+            </div>
+          </a>
+          <p>Centralized software distribution and technical resource hub for clients and system administrators.</p>
+          <div class="footer-disclaimer-box">
+            <strong>Simulation Notice</strong>
+            This portal is part of an internal Rocky Linux / Apache web infrastructure simulation. All business entities, products, and domains are fictional demonstrations.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Catalog</a></li>
+            <li><a href="resources.html">Demonstration Downloads</a></li>
+            <li><a href="about.html">About Download Center</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="software.html?category=monitoring">Monitoring Tools</a></li>
+            <li><a href="software.html?category=backup">Backup Utilities</a></li>
+            <li><a href="software.html?category=administration">System Administration</a></li>
+            <li><a href="software.html?category=networking">Network Diagnostics</a></li>
+            <li><a href="resources.html">Templates &amp; Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Nova Systems</h5>
+          <ul>
+            <li><a href="http://www.nova.test:8080" target="_blank" rel="noopener noreferrer">Corporate Website &rarr;</a></li>
+            <li><a href="about.html#company">About Nova Systems</a></li>
+            <li><a href="support.html#verification">Checksum Verification</a></li>
+            <li><a href="support.html#contact">Lab Support (support@nova.test)</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Systems. All rights reserved. Internal Lab Infrastructure.</p>
+        <div>
+          <span>Domain: dl.nova.test</span> &bull; 
+          <a href="http://www.nova.test:8080" class="text-cyan">www.nova.test</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/catalog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
