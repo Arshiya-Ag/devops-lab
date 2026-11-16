@@ -1,6 +1,6 @@
 $TTL 3H
 @	IN SOA	ns1.nova.test.	hostmaster.nova.test.   (
-					3	; serial
+					4	; serial
 					300	; refresh
 					300	; retry
 					3600	; expire
@@ -10,7 +10,9 @@ $TTL 3H
 ns1		A	10.88.20.10
 10		PTR	ns1.nova.test.
 11		PTR	ns2.nova.test.
-20		PTR	intranet.nova.test.
+21		PTR	intranet.nova.test.
 31		PTR	app.nova.test.
 40		PTR	mail.nova.test.
+50		PTR	WG1.nova.test.
+51		PTR	WG2.nova.test.
 100		PTR	client.nova.test.

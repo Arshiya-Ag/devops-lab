@@ -1,6 +1,6 @@
 $TTL 300
 @	IN SOA ns1.nova.test.   hostmaster.nova.test. (
-					15	; serial
+					34	; serial
 					300	; refresh
 					300	; retry
 					3600	; expire
@@ -8,16 +8,24 @@ $TTL 300
 
 
 
-		NS	ns1.nova.test.
+@		NS	ns1.nova.test.
 ns1		A	10.88.20.10
-		NS	ns2.nova.test.
+@		NS	ns2.nova.test.
 ns2		A	10.88.20.11
+
 mail		A	10.88.20.40
+
 client		A	10.88.20.100
-intranet	A	10.88.20.20
+
+intranet	A	10.88.20.21
 www		CNAME	Intranet
+dl		CNAME   intranet
+
 app		A	10.88.20.31
 dashboard	CNAME	app
+
+WG1		A	10.88.20.50
+WG2		A	10.88.20.51
 
 @		IN	MX	10	mail.nova.test.
 txt-only	IN	TXT		"lab-only"
