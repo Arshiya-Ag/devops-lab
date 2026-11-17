@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nova Systems — Reliable IT infrastructure, custom software development, cybersecurity consulting, and managed IT support for small and medium-sized businesses." />
+  <title>Nova Systems — Reliable IT. Smarter Business.</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- ── Navigation ───────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Nova Systems homepage">
+        <!-- Logo SVG -->
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+          <rect width="38" height="38" rx="9" fill="#2563EB"/>
+          <path d="M9 28V10l6.5 0 8 10.5V10H29V28h-6.3L14.5 17.5V28H9Z" fill="white"/>
+          <circle cx="30" cy="10" r="3" fill="#06B6D4"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Nova Systems</span>
+          <span class="nav-logo-tagline">Reliable IT. Smarter Business.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Contact Us</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </nav>
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <main>
+  <section class="hero page-top" aria-labelledby="hero-heading">
+    <div class="hero-bg">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow" aria-label="IT &amp; Software Solutions">IT &amp; Software Solutions</div>
+        <h1 id="hero-heading">Reliable IT.<br><span>Smarter Business.</span></h1>
+        <p class="hero-desc">
+          Nova Systems delivers IT infrastructure management, custom software development,
+          cybersecurity consulting, and managed IT services — helping growing businesses
+          build technology that works reliably.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary btn-lg">Explore Our Services</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Contact Our Team</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Company overview">
+          <div>
+            <span class="hero-stat-value">4<span>+</span></span>
+            <span class="hero-stat-label">Service Divisions</span>
+          </div>
+          <div>
+            <span class="hero-stat-value">50<span>+</span></span>
+            <span class="hero-stat-label">Technology Professionals</span>
+          </div>
+          <div>
+            <span class="hero-stat-value">B2B</span>
+            <span class="hero-stat-label">Focused on SMB Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Visual -->
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Abstract server rack / network illustration -->
+        <!-- Outer ring -->
+        <circle cx="240" cy="240" r="220" stroke="rgba(37,99,235,0.15)" stroke-width="1"/>
+        <circle cx="240" cy="240" r="175" stroke="rgba(6,182,212,0.12)" stroke-width="1" stroke-dasharray="6 4"/>
+        <!-- Center node -->
+        <circle cx="240" cy="240" r="52" fill="rgba(37,99,235,0.18)" stroke="#2563EB" stroke-width="1.5"/>
+        <circle cx="240" cy="240" r="34" fill="#2563EB"/>
+        <!-- N lettermark -->
+        <path d="M225 254V226l5 0 10 13V226H255V254h-5.5L240 241V254H225Z" fill="white"/>
+        <!-- Orbital nodes -->
+        <circle cx="240" cy="65"  r="12" fill="#101C34" stroke="#06B6D4" stroke-width="1.5"/>
+        <circle cx="415" cy="240" r="12" fill="#101C34" stroke="#06B6D4" stroke-width="1.5"/>
+        <circle cx="240" cy="415" r="12" fill="#101C34" stroke="#2563EB" stroke-width="1.5"/>
+        <circle cx="65"  cy="240" r="12" fill="#101C34" stroke="#2563EB" stroke-width="1.5"/>
+        <!-- Diagonal nodes -->
+        <circle cx="344" cy="136" r="9" fill="#101C34" stroke="#06B6D4" stroke-width="1.5"/>
+        <circle cx="344" cy="344" r="9" fill="#101C34" stroke="#2563EB" stroke-width="1.5"/>
+        <circle cx="136" cy="344" r="9" fill="#101C34" stroke="#06B6D4" stroke-width="1.5"/>
+        <circle cx="136" cy="136" r="9" fill="#101C34" stroke="#2563EB" stroke-width="1.5"/>
+        <!-- Connection lines -->
+        <line x1="240" y1="77"  x2="240" y2="188" stroke="rgba(6,182,212,0.3)"  stroke-width="1"/>
+        <line x1="403" y1="240" x2="292" y2="240" stroke="rgba(6,182,212,0.3)"  stroke-width="1"/>
+        <line x1="240" y1="403" x2="240" y2="292" stroke="rgba(37,99,235,0.3)"  stroke-width="1"/>
+        <line x1="77"  y1="240" x2="188" y2="240" stroke="rgba(37,99,235,0.3)"  stroke-width="1"/>
+        <line x1="336" y1="144" x2="277" y2="203" stroke="rgba(6,182,212,0.25)"  stroke-width="1"/>
+        <line x1="336" y1="336" x2="277" y2="277" stroke="rgba(37,99,235,0.25)"  stroke-width="1"/>
+        <line x1="144" y1="336" x2="203" y2="277" stroke="rgba(6,182,212,0.25)"  stroke-width="1"/>
+        <line x1="144" y1="144" x2="203" y2="203" stroke="rgba(37,99,235,0.25)"  stroke-width="1"/>
+        <!-- Pulse rings -->
+        <circle cx="240" cy="65" r="20" stroke="rgba(6,182,212,0.2)" stroke-width="1" fill="none"/>
+        <circle cx="415" cy="240" r="20" stroke="rgba(6,182,212,0.2)" stroke-width="1" fill="none"/>
+        <!-- Label dots inside nodes -->
+        <circle cx="240" cy="65"  r="4" fill="#06B6D4"/>
+        <circle cx="415" cy="240" r="4" fill="#06B6D4"/>
+        <circle cx="240" cy="415" r="4" fill="#2563EB"/>
+        <circle cx="65"  cy="240" r="4" fill="#2563EB"/>
+        <circle cx="344" cy="136" r="3" fill="#06B6D4"/>
+        <circle cx="344" cy="344" r="3" fill="#2563EB"/>
+        <circle cx="136" cy="344" r="3" fill="#06B6D4"/>
+        <circle cx="136" cy="136" r="3" fill="#2563EB"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Divisions ─────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="divisions-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">What We Do</span>
+        <h2 id="divisions-heading">Four Divisions. One Reliable Partner.</h2>
+        <p>Nova Systems is organised into four specialist divisions, each focused on a core area of technology services — working together to deliver integrated solutions for our clients.</p>
+      </div>
+
+      <div class="divisions-grid">
+
+        <article class="division-card fade-up stagger-1">
+          <div class="division-number">01</div>
+          <div class="card-icon card-icon--blue" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>IT Infrastructure &amp; Operations</h3>
+          <p>Server administration, network design, virtualisation, monitoring, and backup solutions for reliable and scalable IT environments.</p>
+          <a href="services.html#infrastructure" class="card-cta" aria-label="Learn more about IT Infrastructure services">Learn more →</a>
+        </article>
+
+        <article class="division-card fade-up stagger-2">
+          <div class="division-number">02</div>
+          <div class="card-icon card-icon--cyan" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Software Development</h3>
+          <p>Custom web applications, business management systems, APIs, and internal portals — built to fit your operational requirements.</p>
+          <a href="services.html#software" class="card-cta" aria-label="Learn more about Software Development services">Learn more →</a>
+        </article>
+
+        <article class="division-card fade-up stagger-3">
+          <div class="division-number">03</div>
+          <div class="card-icon card-icon--navy" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Security &amp; Consulting</h3>
+          <p>Infrastructure security assessments, server hardening, network protection, access control, and IT audit services.</p>
+          <a href="services.html#security" class="card-cta" aria-label="Learn more about Security and Consulting services">Learn more →</a>
+        </article>
+
+        <article class="division-card fade-up stagger-4">
+          <div class="division-number">04</div>
+          <div class="card-icon card-icon--green" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Technical Support &amp; Managed Services</h3>
+          <p>Helpdesk support, ongoing server maintenance, infrastructure management, and reliable technical operations for your business.</p>
+          <a href="services.html#support" class="card-cta" aria-label="Learn more about Technical Support services">Learn more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why Choose Nova ────────────────────────────────────── -->
+  <section class="section section--light" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Why Nova Systems</span>
+        <h2 id="why-heading">Technology Partners Who Deliver</h2>
+        <p>We combine technical expertise with a client-focused approach to provide practical, dependable technology solutions for growing businesses.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item fade-up stagger-1">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <h4>Proven Reliability</h4>
+            <p>Our infrastructure and support services are designed for maximum uptime and business continuity, so you can focus on your operations.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-up stagger-2">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>Security-First Approach</h4>
+            <p>Every solution we build incorporates security best practices from the ground up — not as an afterthought.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-up stagger-3">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>Responsive Support</h4>
+            <p>Our technical team is available to respond quickly to issues, keeping your systems running and your business moving forward.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-up stagger-4">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+          </div>
+          <div>
+            <h4>Scalable Solutions</h4>
+            <p>We build infrastructure and software with growth in mind, so your technology scales alongside your business.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-up stagger-1">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4>Client-Centred Culture</h4>
+            <p>We prioritise understanding your business needs before proposing solutions — technology should serve your goals, not the other way around.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-up stagger-2">
+          <div class="why-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <div>
+            <h4>Transparent Communication</h4>
+            <p>We keep our clients informed at every stage, with clear documentation, honest reporting, and straightforward advice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Approach ───────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="approach-heading">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Our Approach</span>
+        <h2 id="approach-heading">How We Work With You</h2>
+        <p>We follow a structured, transparent process to ensure every engagement delivers practical results aligned with your business objectives.</p>
+      </div>
+
+      <div class="approach-steps">
+        <div class="approach-step fade-up stagger-1">
+          <div class="step-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h4>Discovery &amp; Assessment</h4>
+          <p>We begin with a thorough assessment of your existing infrastructure, business goals, and technical requirements to establish a clear baseline.</p>
+        </div>
+
+        <div class="approach-step fade-up stagger-2">
+          <div class="step-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h4>Planning &amp; Design</h4>
+          <p>Our team designs a tailored solution with clear timelines, defined deliverables, and documented architecture decisions for full transparency.</p>
+        </div>
+
+        <div class="approach-step fade-up stagger-3">
+          <div class="step-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4>Implementation</h4>
+          <p>We deploy and configure solutions with minimal disruption to your business operations, following documented procedures and change management practices.</p>
+        </div>
+
+        <div class="approach-step fade-up stagger-4">
+          <div class="step-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h4>Ongoing Support</h4>
+          <p>After deployment, we provide ongoing monitoring, maintenance, and technical support to ensure your systems continue to perform reliably.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Band ───────────────────────────────────────────── -->
+  <section class="section cta-band" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2 id="cta-heading">Ready to Build a More Reliable Technology Foundation?</h2>
+          <p>Talk to our team about your IT challenges. We will assess your situation and propose practical solutions tailored to your business.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="contact.html" class="btn btn-cyan btn-lg">Get in Touch</a>
+          <a href="services.html" class="btn btn-secondary btn-lg">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Nova Systems homepage">
+            <svg width="34" height="34" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+              <rect width="38" height="38" rx="9" fill="#2563EB"/>
+              <path d="M9 28V10l6.5 0 8 10.5V10H29V28h-6.3L14.5 17.5V28H9Z" fill="white"/>
+              <circle cx="30" cy="10" r="3" fill="#06B6D4"/>
+            </svg>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Nova Systems</span>
+            </div>
+          </a>
+          <p>Reliable IT infrastructure, custom software development, and managed IT services for small and medium-sized businesses.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#infrastructure">IT Infrastructure</a></li>
+            <li><a href="services.html#software">Software Development</a></li>
+            <li><a href="services.html#security">Security &amp; Consulting</a></li>
+            <li><a href="services.html#support">Managed Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>support@nova.test<br><small style="opacity:.6">(Internal lab placeholder)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Contact us for location details</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Systems. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

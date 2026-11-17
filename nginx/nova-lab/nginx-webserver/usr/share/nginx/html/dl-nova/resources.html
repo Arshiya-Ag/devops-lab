@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Download real Nova Systems infrastructure resources — Linux checklists, CSV network inventory templates, server deployment guides, and complete resource ZIP packs." />
+  <title>Demonstration Resources &amp; Downloads — Nova Download Center</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- ── Navigation Bar ───────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+        <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+          <rect width="42" height="42" rx="9" fill="#101C34"/>
+          <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+          <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-parent">Nova Systems</span>
+          <span class="nav-logo-title">Download Center</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="resources.html" class="active" aria-current="page">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+
+      <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer" title="Visit Nova Systems corporate website">
+        <span>Corporate Site</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="software.html">Software</a>
+    <a href="resources.html" class="active">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer">
+      <span>Nova Systems Corporate Site &rarr;</span>
+    </a>
+  </nav>
+
+  <main>
+    <!-- ── Page Hero ────────────────────────────────────────── -->
+    <section class="page-hero page-top" aria-labelledby="resources-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol role="list">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">›</li>
+            <li aria-current="page">Resources</li>
+          </ol>
+        </nav>
+        <span class="section-label">Verified Static Artifacts</span>
+        <h1 id="resources-hero-heading">Demonstration Resources</h1>
+        <p class="page-hero-desc">
+          Download genuine operational tools, deployment guides, and infrastructure templates. All resources are verified, locally hosted, and ready for immediate deployment in internal lab environments.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Resources Grid Section ───────────────────────────── -->
+    <section class="section section--light">
+      <div class="container">
+
+        <!-- Toolbar: Search and Sort -->
+        <div class="catalog-toolbar" role="region" aria-label="Resource filter toolbar">
+          <div class="search-bar-wrap" style="flex: 1 1 300px; max-width: 420px; box-shadow: none;">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="resources-search-input" 
+              class="search-input" 
+              placeholder="Search resources by title or file format..." 
+              aria-label="Filter resource list"
+              style="padding-block: 0.5rem; font-size: 0.875rem;" 
+            />
+            <button class="search-clear-btn" id="resources-search-clear" aria-label="Clear resource filter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="sort-group">
+            <label for="resources-sort-select" class="sort-label">Sort:</label>
+            <select id="resources-sort-select" class="sort-select" aria-label="Sort downloadable resources">
+              <option value="name-asc">Name (A &rarr; Z)</option>
+              <option value="name-desc">Name (Z &rarr; A)</option>
+              <option value="size">File Size (Largest First)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex-between mb-3" style="padding-inline: 0.25rem;">
+          <span class="text-muted" id="resources-result-count">Showing 4 resources</span>
+          <span class="badge badge-success">Status: 4/4 Verified Files</span>
+        </div>
+
+        <!-- Resources Cards Grid -->
+        <div class="grid-2" id="resources-grid" aria-live="polite">
+          <!-- Populated dynamically via assets/js/main.js from window.NOVA_CATALOG.resources -->
+          <noscript>
+            <!-- Direct static fallback for environments without JavaScript -->
+            <article class="card">
+              <div class="card-top">
+                <div class="card-icon card-icon--green">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                </div>
+                <div class="card-header-meta">
+                  <span class="badge badge-success">Available</span>
+                  <span class="badge badge-cyan">Documentation</span>
+                </div>
+              </div>
+              <h3 class="card-title">Nova Infrastructure Deployment Checklist</h3>
+              <p class="card-desc">An operational verification checklist covering system baselines, LVM storage, static networking, SELinux enforcement, SSH hardening, and Apache web service deployment.</p>
+              <div class="checksum-box">
+                <span class="checksum-text">SHA256: d5a06ae45e59a9986d42e89f3ee493cb68d2ea59c299be7e156f6d127ec55adb</span>
+              </div>
+              <div class="card-footer">
+                <a href="downloads/resources/nova-infrastructure-checklist.md" download class="btn btn-download w-full">Download File (6.2 KB)</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <div class="card-icon card-icon--green">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                </div>
+                <div class="card-header-meta">
+                  <span class="badge badge-success">Available</span>
+                  <span class="badge badge-cyan">Technical Resources</span>
+                </div>
+              </div>
+              <h3 class="card-title">Nova Network Inventory Template</h3>
+              <p class="card-desc">A production-grade CSV data template for cataloging IP assignments, hostnames, roles, subnets, VLANs, and operational statuses across server fleets.</p>
+              <div class="checksum-box">
+                <span class="checksum-text">SHA256: 896593e60bd16c89826a59598abd98d5c2d3ccf88538df36638f9fb762b7f146</span>
+              </div>
+              <div class="card-footer">
+                <a href="downloads/resources/nova-network-inventory-template.csv" download class="btn btn-download w-full">Download File (1.8 KB)</a>
+              </div>
+            </article>
+          </noscript>
+        </div>
+
+        <!-- Verification Guidance Box -->
+        <div style="margin-top: 3.5rem; background: #FFFFFF; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 2rem; box-shadow: var(--shadow-sm);">
+          <div class="flex-between flex-wrap gap-2 mb-2">
+            <h3 style="font-size: 1.2rem; color: var(--navy);">Verifying Download Integrity</h3>
+            <a href="support.html#verification" class="text-blue" style="font-size: 0.875rem; font-weight: 600;">Full Verification Guide &rarr;</a>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--slate-dark); margin-bottom: 1.25rem;">
+            Before executing or deploying any downloaded resource in your Linux environment, verify that its SHA-256 hash matches the authoritative signature published above:
+          </p>
+
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span>BASH TERMINAL (ROCKY LINUX / LINUX CLI)</span>
+              <span>SHA-256 VALIDATION</span>
+            </div>
+            <div class="terminal-line">
+              <span class="comment"># 1. Download file and calculate checksum:</span>
+            </div>
+            <div class="terminal-line">
+              <span class="prompt">$</span> sha256sum nova-resource-pack.zip
+            </div>
+            <div class="terminal-line" style="color: #94A3B8;">
+              3b5abf40ec977ecd5675c64050324032d9b2292b8d5a45426f2029da120c2349  nova-resource-pack.zip
+            </div>
+            <div class="terminal-line mt-2">
+              <span class="comment"># 2. Extract contents if verification passes:</span>
+            </div>
+            <div class="terminal-line">
+              <span class="prompt">$</span> unzip -t nova-resource-pack.zip
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+            <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <rect width="42" height="42" rx="9" fill="#101C34"/>
+              <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+              <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <div class="nav-logo-text">
+              <span class="nav-logo-parent">Nova Systems</span>
+              <span class="nav-logo-title">Download Center</span>
+            </div>
+          </a>
+          <p>Centralized software distribution and technical resource hub for clients and system administrators.</p>
+          <div class="footer-disclaimer-box">
+            <strong>Simulation Notice</strong>
+            This portal is part of an internal Rocky Linux / Apache web infrastructure simulation. All business entities, products, and domains are fictional demonstrations.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Catalog</a></li>
+            <li><a href="resources.html">Demonstration Downloads</a></li>
+            <li><a href="about.html">About Download Center</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="software.html?category=monitoring">Monitoring Tools</a></li>
+            <li><a href="software.html?category=backup">Backup Utilities</a></li>
+            <li><a href="software.html?category=administration">System Administration</a></li>
+            <li><a href="software.html?category=networking">Network Diagnostics</a></li>
+            <li><a href="resources.html">Templates &amp; Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Nova Systems</h5>
+          <ul>
+            <li><a href="http://www.nova.test:8080" target="_blank" rel="noopener noreferrer">Corporate Website &rarr;</a></li>
+            <li><a href="about.html#company">About Nova Systems</a></li>
+            <li><a href="support.html#verification">Checksum Verification</a></li>
+            <li><a href="support.html#contact">Lab Support (support@nova.test)</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Systems. All rights reserved. Internal Lab Infrastructure.</p>
+        <div>
+          <span>Domain: dl.nova.test</span> &bull; 
+          <a href="http://www.nova.test:8080" class="text-cyan">www.nova.test</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/catalog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

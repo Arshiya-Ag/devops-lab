@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Technical support, FAQ, troubleshooting guidance, and SHA-256 integrity verification instructions for Nova Systems Download Center." />
+  <title>Technical Support &amp; Verification — Nova Download Center</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- ── Navigation Bar ───────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+        <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+          <rect width="42" height="42" rx="9" fill="#101C34"/>
+          <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+          <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-parent">Nova Systems</span>
+          <span class="nav-logo-title">Download Center</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html" class="active" aria-current="page">Support</a></li>
+      </ul>
+
+      <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer" title="Visit Nova Systems corporate website">
+        <span>Corporate Site</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="software.html">Software</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html" class="active">Support</a>
+    <a href="http://www.nova.test:8080" class="nav-corp-link" target="_blank" rel="noopener noreferrer">
+      <span>Nova Systems Corporate Site &rarr;</span>
+    </a>
+  </nav>
+
+  <main>
+    <!-- ── Page Hero ────────────────────────────────────────── -->
+    <section class="page-hero page-top" aria-labelledby="support-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol role="list">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">›</li>
+            <li aria-current="page">Support &amp; Verification</li>
+          </ol>
+        </nav>
+        <span class="section-label">Troubleshooting &amp; Assistance</span>
+        <h1 id="support-hero-heading">Support &amp; Verification</h1>
+        <p class="page-hero-desc">
+          Step-by-step guides for cryptographic file verification, download troubleshooting, release lifecycle definitions, and internal lab support.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Checksum Verification Guide ──────────────────────── -->
+    <section class="section" id="verification">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Security &amp; Integrity</span>
+          <h2>Cryptographic Checksum Verification</h2>
+          <p>
+            Verify that downloaded packages have not been altered or corrupted in transit by validating their cryptographic SHA-256 fingerprint.
+          </p>
+        </div>
+
+        <div class="grid-3 mb-4">
+          <div class="card">
+            <h4 style="margin-bottom: 0.5rem; color: var(--navy);">Linux / Rocky Linux CLI</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Use standard core utilities available in all Enterprise Linux systems:</p>
+            <div class="terminal-card" style="margin: 0; padding: 1rem; font-size: 0.8rem;">
+              <div class="terminal-line"><span class="prompt">$</span> sha256sum &lt;filename&gt;</div>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--slate); margin-top: 0.75rem;">
+              Compare the 64-character output directly with the SHA-256 signature displayed on the resource card.
+            </p>
+          </div>
+
+          <div class="card">
+            <h4 style="margin-bottom: 0.5rem; color: var(--navy);">macOS Terminal</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Use the built-in Perl SHA utility:</p>
+            <div class="terminal-card" style="margin: 0; padding: 1rem; font-size: 0.8rem;">
+              <div class="terminal-line"><span class="prompt">$</span> shasum -a 256 &lt;filename&gt;</div>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--slate); margin-top: 0.75rem;">
+              Outputs the exact SHA-256 digest alongside the target filename.
+            </p>
+          </div>
+
+          <div class="card">
+            <h4 style="margin-bottom: 0.5rem; color: var(--navy);">Windows PowerShell</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Run the native cryptographic cmdlet:</p>
+            <div class="terminal-card" style="margin: 0; padding: 1rem; font-size: 0.8rem;">
+              <div class="terminal-line"><span class="prompt">PS&gt;</span> Get-FileHash &lt;file&gt; -Algorithm SHA256</div>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--slate); margin-top: 0.75rem;">
+              Inspect the <code>Hash</code> property returned in the formatted output table.
+            </p>
+          </div>
+        </div>
+
+        <!-- Authoritative Checksum Table -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); overflow-x: auto; box-shadow: var(--shadow-sm);">
+          <div style="padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); background: #F8FAFC;">
+            <h4 style="margin: 0; color: var(--navy);">Authoritative Release Signatures (v2026.1)</h4>
+          </div>
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem; text-align: left;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--border); background: #FFFFFF;">
+                <th style="padding: 0.75rem 1.25rem; color: var(--slate-dark);">Resource Name</th>
+                <th style="padding: 0.75rem 1.25rem; color: var(--slate-dark);">Size</th>
+                <th style="padding: 0.75rem 1.25rem; color: var(--slate-dark);">Authoritative SHA-256 Checksum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.85rem 1.25rem; font-weight: 600;">nova-infrastructure-checklist.md</td>
+                <td style="padding: 0.85rem 1.25rem; color: var(--slate);">6.2 KB</td>
+                <td style="padding: 0.85rem 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--blue);">
+                  d5a06ae45e59a9986d42e89f3ee493cb68d2ea59c299be7e156f6d127ec55adb
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.85rem 1.25rem; font-weight: 600;">nova-network-inventory-template.csv</td>
+                <td style="padding: 0.85rem 1.25rem; color: var(--slate);">1.8 KB</td>
+                <td style="padding: 0.85rem 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--blue);">
+                  896593e60bd16c89826a59598abd98d5c2d3ccf88538df36638f9fb762b7f146
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.85rem 1.25rem; font-weight: 600;">nova-server-deployment-notes.md</td>
+                <td style="padding: 0.85rem 1.25rem; color: var(--slate);">4.5 KB</td>
+                <td style="padding: 0.85rem 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--blue);">
+                  f9c040e6cfe94c64e13ee07e6d3409e0bf2c0a39e540a25e32dd07600ee0f8f4
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0.85rem 1.25rem; font-weight: 600;">nova-resource-pack.zip</td>
+                <td style="padding: 0.85rem 1.25rem; color: var(--slate);">5.6 KB</td>
+                <td style="padding: 0.85rem 1.25rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--blue);">
+                  3b5abf40ec977ecd5675c64050324032d9b2292b8d5a45426f2029da120c2349
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Release Lifecycle Standards ──────────────────────── -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Lifecycle Taxonomy</span>
+          <h2>Software Release Classifications</h2>
+          <p>Nova Systems applies clear, standardized availability tags to all catalog listings.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="card" style="border-left: 3px solid #94A3B8;">
+            <span class="badge badge-warning mb-2">Coming Soon</span>
+            <h4 style="margin-bottom: 0.4rem;">Design &amp; Concept</h4>
+            <p style="font-size: 0.875rem;">Architecture specifications defined. Undergoing internal prototyping. No binaries published.</p>
+          </div>
+
+          <div class="card" style="border-left: 3px solid var(--blue);">
+            <span class="badge badge-blue mb-2">Alpha / Preview</span>
+            <h4 style="margin-bottom: 0.4rem;">Early Evaluation</h4>
+            <p style="font-size: 0.875rem;">Functional preview builds distributed internally for testing against staging hypervisors.</p>
+          </div>
+
+          <div class="card" style="border-left: 3px solid var(--cyan-dark);">
+            <span class="badge badge-cyan mb-2">Release Candidate</span>
+            <h4 style="margin-bottom: 0.4rem;">Pre-Production</h4>
+            <p style="font-size: 0.875rem;">Feature-complete software undergoing regression testing and security audit.</p>
+          </div>
+
+          <div class="card" style="border-left: 3px solid var(--success);">
+            <span class="badge badge-success mb-2">Available</span>
+            <h4 style="margin-bottom: 0.4rem;">General Availability</h4>
+            <p style="font-size: 0.875rem;">Production-ready resources, templates, and signed artifacts with verified checksums.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ Section (Accordion) ──────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Common Questions</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions regarding downloads, deployment compatibility, and file integrity.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- Item 1 -->
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span>Why do some software products show "Coming Soon"?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Nova Systems adheres to transparent engineering standards. We do not distribute placeholder binaries or mock executable files. Products marked as <strong>Coming Soon</strong> are currently in active development or internal review. Real, verified demonstration resources are available in the <a href="resources.html" class="text-blue">Resources</a> section.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I host this website on Apache in an offline Rocky Linux lab?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Yes. The Nova Download Center website is engineered with 100% static assets (HTML5, CSS3, vanilla JavaScript, and inline SVG graphics). It has zero external CDN dependencies, makes no external network requests, and functions completely offline in air-gapped lab environments.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What should I do if a downloaded file checksum does not match?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              A checksum mismatch indicates an incomplete download, network transport truncation, or filesystem corruption. Delete the incomplete file, re-download from <code>http://dl.nova.test:8080/resources.html</code>, and run <code>sha256sum &lt;filename&gt;</code> again. Never deploy or execute resources with mismatched signatures.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does this portal relate to the main corporate website (www.nova.test)?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Nova Download Center (<code>dl.nova.test</code>) is designed as a specialized subdomain service under the Nova Systems corporate umbrella. Both websites share the same corporate design system, brand colors, and typography, but run independently on name-based Apache VirtualHosts under port 8080.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I extract the Nova Resource Pack ZIP archive in Linux?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              In your Linux terminal, install the unzip package if needed (<code>dnf install unzip -y</code>), test the archive integrity (<code>unzip -t nova-resource-pack.zip</code>), and extract to your desired working directory (<code>unzip nova-resource-pack.zip -d ./nova-resources/</code>).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Technical Support Contact Information ────────────── -->
+    <section class="section section--light" id="contact">
+      <div class="container">
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: clamp(2rem, 4vw, 3rem); box-shadow: var(--shadow-sm); max-width: 860px; margin-inline: auto;">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="section-label">Lab Operations Helpdesk</span>
+            <h2 style="color: var(--navy); margin-bottom: 0.5rem;">Need Technical Assistance?</h2>
+            <p style="color: var(--slate-dark); font-size: 0.95rem;">
+              For inquiries regarding demonstration resources or internal infrastructure setup, reference the internal lab contact details below.
+            </p>
+          </div>
+
+          <div class="grid-2 gap-2 mb-3">
+            <div style="padding: 1.25rem; background: var(--light); border: 1px solid var(--border); border-radius: var(--radius-sm);">
+              <span class="text-slate" style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Internal Lab Contact</span>
+              <p style="font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-top: 0.25rem;">
+                support@nova.test
+              </p>
+              <small class="text-muted" style="display: block; margin-top: 0.2rem;">
+                (Fictional internal-lab address for Rocky Linux DNS/Apache simulations)
+              </small>
+            </div>
+
+            <div style="padding: 1.25rem; background: var(--light); border: 1px solid var(--border); border-radius: var(--radius-sm);">
+              <span class="text-slate" style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Responsible Department</span>
+              <p style="font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-top: 0.25rem;">
+                Technical Support &amp; Managed Services
+              </p>
+              <small class="text-muted" style="display: block; margin-top: 0.2rem;">
+                Division 04 &bull; Nova Systems
+              </small>
+            </div>
+          </div>
+
+          <div style="background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.25); border-radius: var(--radius-sm); padding: 1.25rem; font-size: 0.875rem; color: var(--slate-dark); line-height: 1.55;">
+            <strong>Infrastructure Note:</strong> As this portal operates entirely statically on Apache HTTP Server without an active mail transfer agent or database backend, contact forms are intentionally not embedded. For production inquiries, consult your designated Nova Systems account engineer.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Nova Download Center homepage">
+            <svg class="nav-logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <rect width="42" height="42" rx="9" fill="#101C34"/>
+              <path d="M8 30V12h5.5l9 12V12H27v18h-5.2L13.5 18.5V30H8Z" fill="#2563EB"/>
+              <path d="M33 18v8m0 0l-3-3m3 3l3-3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29 30h8" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <div class="nav-logo-text">
+              <span class="nav-logo-parent">Nova Systems</span>
+              <span class="nav-logo-title">Download Center</span>
+            </div>
+          </a>
+          <p>Centralized software distribution and technical resource hub for clients and system administrators.</p>
+          <div class="footer-disclaimer-box">
+            <strong>Simulation Notice</strong>
+            This portal is part of an internal Rocky Linux / Apache web infrastructure simulation. All business entities, products, and domains are fictional demonstrations.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Catalog</a></li>
+            <li><a href="resources.html">Demonstration Downloads</a></li>
+            <li><a href="about.html">About Download Center</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="software.html?category=monitoring">Monitoring Tools</a></li>
+            <li><a href="software.html?category=backup">Backup Utilities</a></li>
+            <li><a href="software.html?category=administration">System Administration</a></li>
+            <li><a href="software.html?category=networking">Network Diagnostics</a></li>
+            <li><a href="resources.html">Templates &amp; Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Nova Systems</h5>
+          <ul>
+            <li><a href="http://www.nova.test:8080" target="_blank" rel="noopener noreferrer">Corporate Website &rarr;</a></li>
+            <li><a href="about.html#company">About Nova Systems</a></li>
+            <li><a href="support.html#verification">Checksum Verification</a></li>
+            <li><a href="support.html#contact">Lab Support (support@nova.test)</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Systems. All rights reserved. Internal Lab Infrastructure.</p>
+        <div>
+          <span>Domain: dl.nova.test</span> &bull; 
+          <a href="http://www.nova.test:8080" class="text-cyan">www.nova.test</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/catalog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
