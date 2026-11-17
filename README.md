@@ -10,14 +10,12 @@ This repository contains configuration files, infrastructure projects, and troub
 
 - **[UDnsOps](bind/UDnsOps/):** Ubuntu-based caching DNS server.
 - **[RDnsOps](bind/RDnsOps/):** Rocky Linux-based caching DNS server.
-- **[Nova Systems](bind/nova-lab/):** A simulated enterprise DNS infrastructure featuring authoritative DNS servers, forward and reverse DNS, zone transfers, redundancy, subdomain delegation, and recursive DNS caching.
+- **[Nova Systems](bind/nova-lab/):** Simulated enterprise DNS infrastructure featuring authoritative DNS servers, forward and reverse DNS, zone transfers, redundancy, subdomain delegation, and recursive DNS caching.
 
-Configuration files and documentation are organized in the `bind/` directory.
+### Web Servers
 
-### APACHE — HTTPD
-
-- **[NOVA](apache/nova/):** Nova systems Apache Infastructure 
-
+- **[NOVA — Apache](apache/nova-lab/):** Rocky Linux-based Apache HTTP Server infrastructure hosting multiple websites with HTTPS and HTTP-to-HTTPS redirection.
+- **[NOVA — Nginx](nginx/nova-lab/nginx-webserver):** Rocky Linux-based Nginx web server hosting multiple websites using server blocks.
 
 ### Troubleshooting
 
@@ -26,7 +24,7 @@ Configuration files and documentation are organized in the `bind/` directory.
 
 ## Planned Technologies
 
-- **Web Servers:** Apache, Nginx
+- **Web Servers:** Nginx Reverse Proxy, Load Balancing
 - **Containers:** Docker, Docker Compose
 - **Automation:** Bash, Python, Ansible
 - **Linux Services:** systemd, logging, backups
