@@ -13,6 +13,7 @@ The project focuses on hosting multiple websites using Nginx on Rocky Linux, int
 | Server IP | `10.88.20.22` |
 | Domains | `www.nova.test`, `dl.nova.test` |
 | HTTP Port | `80` |
+| HTTPS Port | `443` |
 | Network | `10.88.20.0/24` |
 
 ## Configuration
@@ -26,13 +27,26 @@ Nginx uses dedicated server blocks to host both websites independently on the sa
 
 **Website directories:**
 - Main website: `/usr/share/nginx/html/nova/`
-- Download website: Defined in `dl-nova.conf`
+- Download website: `/usr/share/nginx/html/dl-nova/`
+
+**HTTPS Configuration:**
+
+Both websites support HTTPS using a shared TLS certificate generated with `mkcert`.
+
+- Certificate: `/etc/pki/tls/certs/nova-test.pem`
+- Private Key: `/etc/pki/tls/private/nova-test-key.pem`
+
+The certificate covers both `www.nova.test` and `dl.nova.test`. TLS is enabled independently in each HTTPS server block using Nginx's SSL directives.
+
+**HTTP Redirection:**
+
+Both websites automatically redirect HTTP requests to their HTTPS equivalents using permanent `301` redirects. Original URL paths and query strings are preserved.
 
 **Log files:**
 - Access: `/var/log/nginx/access.log`
 - Error: `/var/log/nginx/error.log`
 
-Both websites are served over HTTP and have been verified to return their respective content successfully.
+Both websites have been tested successfully over HTTPS, with certificate verification and HTTP-to-HTTPS redirection working correctly.
 
 ## DNS Integration
 
