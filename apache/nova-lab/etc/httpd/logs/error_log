@@ -1,20 +1,63 @@
-[Tue Nov 10 12:39:05.622106 2026] [core:notice] [pid 1596:tid 1596] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
-[Tue Nov 10 12:39:05.630737 2026] [suexec:notice] [pid 1596:tid 1596] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
-[Tue Nov 10 12:39:06.036363 2026] [lbmethod_heartbeat:notice] [pid 1596:tid 1596] AH02282: No slotmem from mod_heartmonitor
-[Tue Nov 10 12:39:06.044498 2026] [mpm_event:notice] [pid 1596:tid 1596] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
-[Tue Nov 10 12:39:06.044522 2026] [core:notice] [pid 1596:tid 1596] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
-[Tue Nov 10 13:16:32.683456 2026] [mpm_event:notice] [pid 1596:tid 1596] AH00492: caught SIGWINCH, shutting down gracefully
-[Tue Nov 10 13:16:34.383378 2026] [core:notice] [pid 1919:tid 1919] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
-[Tue Nov 10 13:16:34.390052 2026] [suexec:notice] [pid 1919:tid 1919] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
-[Tue Nov 10 13:16:35.058376 2026] [lbmethod_heartbeat:notice] [pid 1919:tid 1919] AH02282: No slotmem from mod_heartmonitor
-[Tue Nov 10 13:16:35.068091 2026] [mpm_event:notice] [pid 1919:tid 1919] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
-[Tue Nov 10 13:16:35.068135 2026] [core:notice] [pid 1919:tid 1919] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
-[Wed Nov 11 12:27:24.874515 2026] [core:notice] [pid 1227:tid 1227] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
-[Wed Nov 11 12:27:24.881170 2026] [suexec:notice] [pid 1227:tid 1227] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
-[Wed Nov 11 12:27:25.531815 2026] [lbmethod_heartbeat:notice] [pid 1227:tid 1227] AH02282: No slotmem from mod_heartmonitor
-[Wed Nov 11 12:27:25.539655 2026] [mpm_event:notice] [pid 1227:tid 1227] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
-[Wed Nov 11 12:27:25.539695 2026] [core:notice] [pid 1227:tid 1227] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
-[Wed Nov 11 12:45:20.030942 2026] [mpm_event:notice] [pid 1227:tid 1227] AH00493: SIGUSR1 received.  Doing graceful restart
-[Wed Nov 11 12:45:20.552589 2026] [lbmethod_heartbeat:notice] [pid 1227:tid 1227] AH02282: No slotmem from mod_heartmonitor
-[Wed Nov 11 12:45:20.556426 2026] [mpm_event:notice] [pid 1227:tid 1227] AH00489: Apache/2.4.62 (Rocky Linux) configured -- resuming normal operations
-[Wed Nov 11 12:45:20.556462 2026] [core:notice] [pid 1227:tid 1227] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Nov 23 22:04:30.592113 2026] [core:notice] [pid 718:tid 718] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Mon Nov 23 22:04:30.598532 2026] [suexec:notice] [pid 718:tid 718] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Nov 23 22:04:30.598571 2026] [ssl:warn] [pid 718:tid 718] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 23 22:04:30.692413 2026] [ssl:warn] [pid 718:tid 718] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Mon Nov 23 22:04:30.765375 2026] [lbmethod_heartbeat:notice] [pid 718:tid 718] AH02282: No slotmem from mod_heartmonitor
+[Mon Nov 23 22:04:30.797830 2026] [mpm_event:notice] [pid 718:tid 718] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Mon Nov 23 22:04:30.797857 2026] [core:notice] [pid 718:tid 718] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Nov 23 22:14:57.498570 2026] [core:notice] [pid 707:tid 707] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Mon Nov 23 22:14:57.512461 2026] [suexec:notice] [pid 707:tid 707] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Nov 23 22:14:57.512484 2026] [ssl:warn] [pid 707:tid 707] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 23 22:14:57.610969 2026] [ssl:warn] [pid 707:tid 707] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Mon Nov 23 22:14:57.683070 2026] [lbmethod_heartbeat:notice] [pid 707:tid 707] AH02282: No slotmem from mod_heartmonitor
+[Mon Nov 23 22:14:57.718733 2026] [mpm_event:notice] [pid 707:tid 707] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Mon Nov 23 22:14:57.718762 2026] [core:notice] [pid 707:tid 707] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 24 11:28:28.402910 2026] [suexec:notice] [pid 710:tid 710] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 24 11:28:28.406418 2026] [ssl:warn] [pid 710:tid 710] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 24 11:28:28.616036 2026] [ssl:warn] [pid 710:tid 710] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Tue Nov 24 11:28:28.647472 2026] [lbmethod_heartbeat:notice] [pid 710:tid 710] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 24 11:28:28.668968 2026] [mpm_event:notice] [pid 710:tid 710] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Tue Nov 24 11:28:28.669004 2026] [core:notice] [pid 710:tid 710] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 24 11:33:48.552456 2026] [mpm_event:notice] [pid 710:tid 710] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Nov 24 11:33:50.061972 2026] [suexec:notice] [pid 1392:tid 1392] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 24 11:33:50.062090 2026] [ssl:warn] [pid 1392:tid 1392] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 24 11:33:50.337487 2026] [ssl:warn] [pid 1392:tid 1392] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Tue Nov 24 11:33:50.374078 2026] [lbmethod_heartbeat:notice] [pid 1392:tid 1392] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 24 11:33:50.387921 2026] [mpm_event:notice] [pid 1392:tid 1392] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Tue Nov 24 11:33:50.387955 2026] [core:notice] [pid 1392:tid 1392] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 24 13:23:07.339114 2026] [mpm_event:notice] [pid 1392:tid 1392] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Nov 24 13:23:08.725968 2026] [suexec:notice] [pid 2314:tid 2314] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 24 13:23:08.726137 2026] [ssl:warn] [pid 2314:tid 2314] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 24 13:23:08.972034 2026] [ssl:warn] [pid 2314:tid 2314] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Tue Nov 24 13:23:08.991903 2026] [lbmethod_heartbeat:notice] [pid 2314:tid 2314] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 24 13:23:09.002272 2026] [mpm_event:notice] [pid 2314:tid 2314] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Tue Nov 24 13:23:09.002341 2026] [core:notice] [pid 2314:tid 2314] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 24 13:24:12.727840 2026] [mpm_event:notice] [pid 2314:tid 2314] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Nov 24 13:24:13.973730 2026] [suexec:notice] [pid 2515:tid 2515] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 24 13:24:13.973874 2026] [ssl:warn] [pid 2515:tid 2515] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 24 13:24:14.226125 2026] [ssl:warn] [pid 2515:tid 2515] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Tue Nov 24 13:24:14.259874 2026] [lbmethod_heartbeat:notice] [pid 2515:tid 2515] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 24 13:24:14.271217 2026] [mpm_event:notice] [pid 2515:tid 2515] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Tue Nov 24 13:24:14.271254 2026] [core:notice] [pid 2515:tid 2515] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 24 13:33:45.983869 2026] [mpm_event:notice] [pid 2515:tid 2515] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Nov 24 13:33:47.224906 2026] [suexec:notice] [pid 2817:tid 2817] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 24 13:33:47.225199 2026] [ssl:warn] [pid 2817:tid 2817] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 24 13:33:47.474062 2026] [ssl:warn] [pid 2817:tid 2817] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Tue Nov 24 13:33:47.503562 2026] [lbmethod_heartbeat:notice] [pid 2817:tid 2817] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 24 13:33:47.514389 2026] [mpm_event:notice] [pid 2817:tid 2817] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Tue Nov 24 13:33:47.514474 2026] [core:notice] [pid 2817:tid 2817] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Nov 24 14:37:58.544369 2026] [mpm_event:notice] [pid 2817:tid 2817] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Nov 24 14:37:59.845567 2026] [suexec:notice] [pid 3196:tid 3196] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Nov 24 14:37:59.845772 2026] [ssl:warn] [pid 3196:tid 3196] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using www.nova.test. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 24 14:38:00.089144 2026] [ssl:warn] [pid 3196:tid 3196] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.5.8 25 Aug 2026 (OpenSSL 3.0.1 14 Dec 2021), version currently loaded is 0x30000010) - may result in undefined or erroneous behavior
+[Tue Nov 24 14:38:00.122547 2026] [lbmethod_heartbeat:notice] [pid 3196:tid 3196] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 24 14:38:00.133401 2026] [mpm_event:notice] [pid 3196:tid 3196] AH00489: Apache/2.4.62 (Rocky Linux) OpenSSL/3.0.1 configured -- resuming normal operations
+[Tue Nov 24 14:38:00.133432 2026] [core:notice] [pid 3196:tid 3196] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
